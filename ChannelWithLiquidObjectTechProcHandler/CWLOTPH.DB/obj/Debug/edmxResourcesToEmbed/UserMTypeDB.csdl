@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CWLOTPH.DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AdditiveData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Salt" Type="String" MaxLength="40" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ID" Type="Decimal" Precision="5" Scale="0" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Self.FK__AdditiveData__ID__412EB0B6" FromRole="AdditiveData" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Material">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Stamp" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="100" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="MaterialEmpiricalCoefficients" Relationship="Self.FK__MaterialEmpi__ID__4316F928" FromRole="Material" ToRole="MaterialEmpiricalCoefficients" />
+    <NavigationProperty Name="MaterialProperties" Relationship="Self.FK__MaterialProp__ID__4222D4EF" FromRole="Material" ToRole="MaterialProperties" />
+  </EntityType>
+  <EntityType Name="MaterialEmpiricalCoefficients">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="consistencyIndexMaterial" Type="Double" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="indexOfMaterialFlow" Type="Double" Nullable="false" />
+    <Property Name="temperatureReduction" Type="Double" Nullable="false" />
+    <Property Name="theHeatTransferCoefficient" Type="Double" Nullable="false" />
+    <Property Name="temperatureCoefficientOfViscosity" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Material" Relationship="Self.FK__MaterialEmpi__ID__4316F928" FromRole="MaterialEmpiricalCoefficients" ToRole="Material" />
+  </EntityType>
+  <EntityType Name="MaterialProperties">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Density" Type="Double" Nullable="false" />
+    <Property Name="MeltingPoint" Type="Double" Nullable="false" />
+    <Property Name="AverageHeatCapacity" Type="Double" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Material" Relationship="Self.FK__MaterialProp__ID__4222D4EF" FromRole="MaterialProperties" ToRole="Material" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="5" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="30" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="AdditiveData" Relationship="Self.FK__AdditiveData__ID__412EB0B6" FromRole="User" ToRole="AdditiveData" />
+  </EntityType>
+  <Association Name="FK__AdditiveData__ID__412EB0B6">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="AdditiveData" Type="Self.AdditiveData" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AdditiveData">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MaterialEmpi__ID__4316F928">
+    <End Role="Material" Type="Self.Material" Multiplicity="1" />
+    <End Role="MaterialEmpiricalCoefficients" Type="Self.MaterialEmpiricalCoefficients" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Material">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MaterialEmpiricalCoefficients">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MaterialProp__ID__4222D4EF">
+    <End Role="Material" Type="Self.Material" Multiplicity="1" />
+    <End Role="MaterialProperties" Type="Self.MaterialProperties" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Material">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MaterialProperties">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="UserMTypeDBContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AdditiveData" EntityType="Self.AdditiveData" />
+    <EntitySet Name="Material" EntityType="Self.Material" />
+    <EntitySet Name="MaterialEmpiricalCoefficients" EntityType="Self.MaterialEmpiricalCoefficients" />
+    <EntitySet Name="MaterialProperties" EntityType="Self.MaterialProperties" />
+    <EntitySet Name="User" EntityType="Self.User" />
+    <AssociationSet Name="FK__AdditiveData__ID__412EB0B6" Association="Self.FK__AdditiveData__ID__412EB0B6">
+      <End Role="User" EntitySet="User" />
+      <End Role="AdditiveData" EntitySet="AdditiveData" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MaterialEmpi__ID__4316F928" Association="Self.FK__MaterialEmpi__ID__4316F928">
+      <End Role="Material" EntitySet="Material" />
+      <End Role="MaterialEmpiricalCoefficients" EntitySet="MaterialEmpiricalCoefficients" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MaterialProp__ID__4222D4EF" Association="Self.FK__MaterialProp__ID__4222D4EF">
+      <End Role="Material" EntitySet="Material" />
+      <End Role="MaterialProperties" EntitySet="MaterialProperties" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

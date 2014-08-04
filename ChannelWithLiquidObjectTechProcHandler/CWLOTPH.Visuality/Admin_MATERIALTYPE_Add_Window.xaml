@@ -1,0 +1,94 @@
+﻿<Window x:Class="CWLOTPH.Visuality.Admin_MATERIALTYPE_Add_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Admin_MATERIALTYPE_Add_Window" Height="435.021" Width="729.873" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/littleWindow.png"/>
+    </Window.Background>
+    <Window.Icon>
+        <BitmapImage UriSource="Resources/icon.png"/>
+    </Window.Icon>
+    <Grid>
+        <Button x:Name="exitButton" Content="" HorizontalAlignment="Left" Margin="666,0,0,390" VerticalAlignment="Bottom" Width="38" RenderTransformOrigin="-0.543,0.15" Height="35" Click="exitButton_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="Resources/exitNotClicked.png"/>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush ImageSource="Resources/exitClicked.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button x:Name="addButton" Content="" HorizontalAlignment="Left" Width="162" RenderTransformOrigin="0.577,8" Margin="487,346,0,37" Click="addButton_Click" Opacity="0.9" BorderBrush="{x:Null}" ClickMode="Press" BorderThickness="0" Foreground="{x:Null}" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="Resources/addNotClicked.png"/>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush ImageSource="Resources/addClicked.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Label x:Name="materialTypeLabel" Content="Тип материала" HorizontalAlignment="Left" Margin="42,54,0,0" VerticalAlignment="Top" Width="151" Height="26" FontWeight="Bold" FontFamily="Open Sans" FontSize="14"/>
+        <TextBox x:Name="materialTypeTextBox" HorizontalAlignment="Left" Height="29" Margin="244,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="densityLabel" Content="Плотность
+               " HorizontalAlignment="Left" Margin="42,85,0,0" VerticalAlignment="Top" Width="151" Height="29" FontFamily="Open Sans" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="densityTextBox" HorizontalAlignment="Left" Height="29" Margin="244,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Label x:Name="meltingTemperatureLabel" Content="Темп. плавления" HorizontalAlignment="Left" Margin="42,120,0,0" VerticalAlignment="Top" Width="151" Height="28" FontFamily="Open Sans" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="meltingTemperatureTextBox" HorizontalAlignment="Left" Height="29" Margin="244,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Label x:Name="averageSpecificHeatCapacityLabel" Content="Ср.удел.теплоемкость" HorizontalAlignment="Left" Margin="42,154,0,0" VerticalAlignment="Top" Width="176" Height="28" FontFamily="Open Sans" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="averageSpecificHeatCapacityTextBox" HorizontalAlignment="Left" Height="29" Margin="244,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Label x:Name="indexOfMaterialFlowLabel" Content="Индекс течения                " HorizontalAlignment="Left" Margin="382,50,0,0" VerticalAlignment="Top" Width="151" Height="29" FontFamily="Open Sans" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="indexOfMaterialTextBox" HorizontalAlignment="Left" Height="29" Margin="584,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Label x:Name="temperatureReductionTemperatureLabel" Content="Темп. приведения" HorizontalAlignment="Left" Margin="382,85,0,0" VerticalAlignment="Top" Width="151" Height="28" FontFamily="Open Sans" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="temperatureReductionTemperatureTextBox" HorizontalAlignment="Left" Height="29" Margin="584,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Label x:Name="theHeatTransferCoefficientSpecificHeatCapacityLabel" Content="Коэф. теплоотдачи" HorizontalAlignment="Left" Margin="382,119,0,0" VerticalAlignment="Top" Width="176" Height="28" FontFamily="Open Sans" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="theHeatTransferCoefficientSpecificHeatCapacityTextBox" HorizontalAlignment="Left" Height="29" Margin="584,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Label x:Name="consistencyIndexMaterialLabel" Content="Коэф. конс. материала            " HorizontalAlignment="Left" Margin="382,155,0,0" VerticalAlignment="Top" Width="176" Height="29" FontFamily="Open Sans" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="consistencyIndexMaterialTextBox" HorizontalAlignment="Left" Height="29" Margin="584,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Label x:Name="temperatureCoefficientOfViscosityTemperatureLabel" Content="Темп. коэф. вязкости" HorizontalAlignment="Left" Margin="382,190,0,0" VerticalAlignment="Top" Width="176" Height="28" FontFamily="Open Sans" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="temperatureCoefficientOfViscosityTemperatureTextBox" HorizontalAlignment="Left" Height="29" Margin="584,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Label x:Name="stampLabel" Content="Марка материала" HorizontalAlignment="Left" Margin="42,199,0,0" VerticalAlignment="Top" Width="151" Height="28" FontFamily="Open Sans" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="stampTextBox" HorizontalAlignment="Left" Height="29" Margin="244,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Label x:Name="descriptionLabel" Content="Описание" HorizontalAlignment="Left" Margin="42,233,0,0" VerticalAlignment="Top" Width="176" Height="28" FontFamily="Open Sans" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="descriptionTextBox" HorizontalAlignment="Left" Height="109" Margin="244,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" />
+    </Grid>
+</Window>

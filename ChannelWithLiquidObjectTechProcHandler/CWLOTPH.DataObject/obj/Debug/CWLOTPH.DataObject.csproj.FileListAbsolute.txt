@@ -1,0 +1,5 @@
+C:\Users\Даниил\documents\visual studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.DataObject\bin\Debug\CWLOTPH.DataObject.dll
+C:\Users\Даниил\documents\visual studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.DataObject\bin\Debug\CWLOTPH.DataObject.pdb
+C:\Users\Даниил\documents\visual studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.DataObject\obj\Debug\CWLOTPH.DataObject.dll
+C:\Users\Даниил\documents\visual studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.DataObject\obj\Debug\CWLOTPH.DataObject.pdb
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.DataObject\obj\Debug\CWLOTPH.DataObject.csprojResolveAssemblyReference.cache

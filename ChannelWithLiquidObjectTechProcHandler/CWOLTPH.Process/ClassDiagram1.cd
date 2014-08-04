@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CWLOTPH.Process.Experiment" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="CWLOTPH.Process.Experiment.State" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Experiment.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>SBAAAAACAAIAAAIAAAAAAQAAAAAAAgAEIEAAAQAAAAA=</HashCode>
+      <FileName>Experiment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CWLOTPH.Process.ProcessController">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQIAAAAAIAAAAAAAAAAAAAAACAAAABAAAEAAAAABAAA=</HashCode>
+      <FileName>ProcessController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Process.ProcessSolve" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAEAAAIAAACAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProcessSolve.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="CWLOTPH.Process.IExperiment">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAAAAACAAIAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>IExperiment.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CWLOTPH.Process.IProcessSolve">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IProcessSolve.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

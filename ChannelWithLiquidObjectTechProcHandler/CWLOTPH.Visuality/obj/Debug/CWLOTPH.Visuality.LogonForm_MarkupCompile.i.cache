@@ -1,0 +1,20 @@
+﻿CWLOTPH.Visuality.LogonForm
+
+
+winexe
+C#
+.cs
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality\obj\Debug\
+CWLOTPH.Visuality.LogonForm
+none
+false
+DEBUG;TRACE
+
+12-661405320
+
+241248424158
+20-484471906
+Admin_MATERIALTYPE_Add_Window.xaml;Admin_MATERIALTYPE_Manipulation_Window.xaml;Admin_MATERIALTYPE_Update_Window.xaml;Admin_USER_Add_Window.xaml;Admin_USER_Manipulation_Window.xaml;Admin_USER_Update_Window.xaml;Admin_Window.xaml;App.xaml;Load_Window.xaml;Logon_Window.xaml;Message_Window.xaml;User_Window.xaml;
+
+False
+

@@ -1,0 +1,15 @@
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality.LogonForm\bin\Debug\CWLOTPH.Visuality.LogonForm.exe.config
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality.LogonForm\obj\Debug\CWLOTPH.Visuality.LogonForm.csprojResolveAssemblyReference.cache
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality.LogonForm\obj\Debug\MainWindow.baml
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality.LogonForm\obj\Debug\MainWindow.g.cs
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality.LogonForm\obj\Debug\App.g.cs
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality.LogonForm\obj\Debug\CWLOTPH.Visuality.LogonForm_MarkupCompile.cache
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality.LogonForm\obj\Debug\CWLOTPH.Visuality.LogonForm.g.resources
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality.LogonForm\bin\Debug\CWLOTPH.Visuality.LogonForm.exe
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality.LogonForm\bin\Debug\CWLOTPH.Visuality.LogonForm.pdb
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality.LogonForm\obj\Debug\CWLOTPH.Visuality.LogonForm.exe
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality.LogonForm\obj\Debug\CWLOTPH.Visuality.LogonForm.pdb
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality.LogonForm\obj\Debug\CWLOTPH.Visuality.LogonForm.Properties.Resources.resources
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality.LogonForm\obj\Debug\CWLOTPH.Visuality.LogonForm.csproj.GenerateResource.Cache
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality.LogonForm\bin\Debug\CWLOTPH.Visuality.dll
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.Visuality.LogonForm\bin\Debug\CWLOTPH.Visuality.pdb

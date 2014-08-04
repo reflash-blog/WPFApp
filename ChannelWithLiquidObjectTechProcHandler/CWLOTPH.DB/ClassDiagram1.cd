@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CWLOTPH.DB.DBInteraсtion">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIABAQAAAAAAAAAAAAAAAAwAAAIgAAAAIBAAAAQ=</HashCode>
+      <FileName>DBInteraсtion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.DB.MaterialType">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEACgACABgAIAAAAACAQBAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MaterialType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.DB.UserMTypeDBContext">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABAAAAAAAQAAAAAAAAAABAEAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>UserMTypeDB.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.DB.AdditiveData">
+    <Position X="4.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABBAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdditiveData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.DB.Material">
+    <Position X="6.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAxgAAAAAAAAAQAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Material.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.DB.MaterialEmpiricalCoefficients">
+    <Position X="8" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAACgACAAgAIAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MaterialEmpiricalCoefficients.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.DB.MaterialProperties">
+    <Position X="9.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAEAAAAAAAgAAAAAAACAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MaterialProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.DB.User">
+    <Position X="2.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAABAAAAAAAACAAAQAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

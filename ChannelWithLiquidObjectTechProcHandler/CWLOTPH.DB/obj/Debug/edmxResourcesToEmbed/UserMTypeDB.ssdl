@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище CWLOTPH.DBModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AdditiveData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Salt" Type="char" MaxLength="40" Nullable="false" />
+    <Property Name="ID" Type="numeric" Precision="5" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Material">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="char" MaxLength="30" Nullable="false" />
+    <Property Name="Stamp" Type="char" MaxLength="20" Nullable="false" />
+    <Property Name="Description" Type="char" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MaterialEmpiricalCoefficients">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="consistencyIndexMaterial" Type="float" Nullable="false" />
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="indexOfMaterialFlow" Type="float" Nullable="false" />
+    <Property Name="temperatureReduction" Type="float" Nullable="false" />
+    <Property Name="theHeatTransferCoefficient" Type="float" Nullable="false" />
+    <Property Name="temperatureCoefficientOfViscosity" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MaterialProperties">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="Density" Type="float" Nullable="false" />
+    <Property Name="MeltingPoint" Type="float" Nullable="false" />
+    <Property Name="AverageHeatCapacity" Type="float" Nullable="false" />
+    <Property Name="ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="numeric" Precision="5" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="char" MaxLength="30" Nullable="false" />
+    <Property Name="Password" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__AdditiveData__ID__412EB0B6">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="AdditiveData" Type="Self.AdditiveData" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AdditiveData">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MaterialEmpi__ID__4316F928">
+    <End Role="Material" Type="Self.Material" Multiplicity="1" />
+    <End Role="MaterialEmpiricalCoefficients" Type="Self.MaterialEmpiricalCoefficients" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Material">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MaterialEmpiricalCoefficients">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MaterialProp__ID__4222D4EF">
+    <End Role="Material" Type="Self.Material" Multiplicity="1" />
+    <End Role="MaterialProperties" Type="Self.MaterialProperties" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Material">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MaterialProperties">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище CWLOTPHDBModelContainer">
+    <EntitySet Name="AdditiveData" EntityType="Self.AdditiveData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Material" EntityType="Self.Material" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MaterialEmpiricalCoefficients" EntityType="Self.MaterialEmpiricalCoefficients" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MaterialProperties" EntityType="Self.MaterialProperties" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__AdditiveData__ID__412EB0B6" Association="Self.FK__AdditiveData__ID__412EB0B6">
+      <End Role="User" EntitySet="User" />
+      <End Role="AdditiveData" EntitySet="AdditiveData" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MaterialEmpi__ID__4316F928" Association="Self.FK__MaterialEmpi__ID__4316F928">
+      <End Role="Material" EntitySet="Material" />
+      <End Role="MaterialEmpiricalCoefficients" EntitySet="MaterialEmpiricalCoefficients" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MaterialProp__ID__4222D4EF" Association="Self.FK__MaterialProp__ID__4222D4EF">
+      <End Role="Material" EntitySet="Material" />
+      <End Role="MaterialProperties" EntitySet="MaterialProperties" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

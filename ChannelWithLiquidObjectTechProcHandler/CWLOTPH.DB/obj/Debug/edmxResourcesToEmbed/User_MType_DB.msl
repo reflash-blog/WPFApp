@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище CWLOTPHDBModelContainer" CdmEntityContainer="User_MType_Entities">
+    <EntitySetMapping Name="AdditiveData">
+      <EntityTypeMapping TypeName="CWLOTPH.DBModel.AdditiveData">
+        <MappingFragment StoreEntitySet="AdditiveData">
+          <ScalarProperty Name="Salt" ColumnName="Salt" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialType">
+      <EntityTypeMapping TypeName="CWLOTPH.DBModel.MaterialType">
+        <MappingFragment StoreEntitySet="MaterialType">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Density" ColumnName="Density" />
+          <ScalarProperty Name="MeltingPoint" ColumnName="MeltingPoint" />
+          <ScalarProperty Name="AverageHeatCapacity" ColumnName="AverageHeatCapacity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="CWLOTPH.DBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

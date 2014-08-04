@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CWLOTPH.Visuality.AdditiveData_Window">
+    <Position X="2" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAFQAAAAUAAEAAAAAAAAAgAAAAQ=</HashCode>
+      <FileName>AdditiveData_Window.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.Admin_MATERIALTYPE_Add_Window">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAEAAAQ=</HashCode>
+      <FileName>Admin_MATERIALTYPE_Add_Window.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.Admin_MATERIALTYPE_Manipulation_Window">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAgAAEAAAAAAAAAAAAAAAAQAAEAAgQ=</HashCode>
+      <FileName>Admin_MATERIALTYPE_Manipulation_Window.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.Admin_MATERIALTYPE_Update_Window">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAQAAAAAAQ=</HashCode>
+      <FileName>Admin_MATERIALTYPE_Update_Window.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.Admin_USER_Add">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAEAAEQ=</HashCode>
+      <FileName>Admin_USER_Add_Window.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.Admin_USER_Manipulation_Window">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAEAAAAEAAAAAAAAAAAAAAAAAEAEAAAQ=</HashCode>
+      <FileName>Admin_USER_Manipulation_Window.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.Admin_USER_Update_Window">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAEQ=</HashCode>
+      <FileName>Admin_USER_Update_Window.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.Admin_Window">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAACAAAAAAAAAEAAAAACggAIAAAAAAAAAAAAw=</HashCode>
+      <FileName>Admin_Window.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.ChartControl">
+    <Position X="6.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAABAAAAAAAAAAAAAAYAAAAAAAAAAAAA=</HashCode>
+      <FileName>ChartControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.DispatcherHelper">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DispatcherHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.FileSystemInteraction">
+    <Position X="2" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAABAAAQQAAEABAAAAAAACAIAAA=</HashCode>
+      <FileName>FileSystemInteraction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.GUI_Controller">
+    <Position X="3.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAQAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>GUI_Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.InputHandler">
+    <Position X="5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAA=</HashCode>
+      <FileName>InputHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.Load_Window">
+    <Position X="3.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAQAAAAAAACAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Load_Window.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.Message_Window">
+    <Position X="5" Y="6.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="CWLOTPH.Visuality.Message_Window.MessageResult" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Message_Window.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAIBAAAAAAAAAAEAAAAAAAgAAAAAAQ=</HashCode>
+      <FileName>Message_Window.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.User_Window">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IUAIAABEBjABAAAAABUEDAAAEAkAAAAAAgIgCAiEAAY=</HashCode>
+      <FileName>User_Window.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.Properties.Resources">
+    <Position X="8" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWLOTPH.Visuality.Properties.Settings">
+    <Position X="9.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

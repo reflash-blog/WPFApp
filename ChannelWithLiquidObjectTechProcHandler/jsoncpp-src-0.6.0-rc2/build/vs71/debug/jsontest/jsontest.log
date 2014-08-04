@@ -1,0 +1,31 @@
+﻿Сборка начата 04.05.2014 13:05:56.
+     1>Проект "C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\jsoncpp-src-0.6.0-rc2\makefiles\vs71\jsontest.vcxproj" в узле 2 (целевые объекты Build).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (../../build/vs71/debug/jsontest\) contains files shared from another project (jsontest.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"../../build/vs71/debug/jsontest\\" /Fd"../../build/vs71/debug/jsontest\vc120.pdb" /FR"../../build/vs71/debug/jsontest\\" /Gd /TP /analyze- /errorReport:prompt ..\..\..\CWLOTPH.ProcessingCore\InputDataObject.cpp ..\..\..\CWLOTPH.ProcessingCore\Main.cpp ..\..\..\CWLOTPH.ProcessingCore\OutputDataObject.cpp ..\..\..\CWLOTPH.ProcessingCore\ProcessingCore.cpp ..\..\..\CWLOTPH.ProcessingCore\stdafx.cpp
+         ProcessingCore.cpp
+         Создание кода...
+         Компиляция...
+         Main.cpp
+         Создание кода...
+         Пропуск... (изменения не обнаружены)
+         stdafx.cpp
+         OutputDataObject.cpp
+         InputDataObject.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\CWLOTPH.Visuality.Logon\bin\Debug\CWLOTPH.ProcessingCore.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\..\CWLOTPH.Visuality.Logon\bin\Debug\jsontest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\CWLOTPH.Visuality.Logon\bin\Debug\CWLOTPH.ProcessingCore.lib" /MACHINE:X86 /SAFESEH ../../build/vs71/debug/jsontest\InputDataObject.obj
+         ../../build/vs71/debug/jsontest\Main.obj
+         ../../build/vs71/debug/jsontest\OutputDataObject.obj
+         ../../build/vs71/debug/jsontest\ProcessingCore.obj
+         ../../build/vs71/debug/jsontest\stdafx.obj
+         "C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\jsoncpp-src-0.6.0-rc2\build\vs71\debug\lib_json\json_vc71_libmtd.lib"
+     1>InputDataObject.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/SAFESEH"
+         jsontest.vcxproj -> C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\jsoncpp-src-0.6.0-rc2\makefiles\vs71\..\..\..\CWLOTPH.Visuality.Logon\bin\Debug\CWLOTPH.ProcessingCore.exe
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o"..\..\..\CWLOTPH.Visuality.Logon\bin\Debug\CWLOTPH.ProcessingCore.bsc" /n ../../build/vs71/debug/jsontest\InputDataObject.sbr ../../build/vs71/debug/jsontest\Main.sbr ../../build/vs71/debug/jsontest\OutputDataObject.sbr ../../build/vs71/debug/jsontest\ProcessingCore.sbr ../../build/vs71/debug/jsontest\stdafx.sbr
+     1>Сборка проекта "C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\jsoncpp-src-0.6.0-rc2\makefiles\vs71\jsontest.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:22.55

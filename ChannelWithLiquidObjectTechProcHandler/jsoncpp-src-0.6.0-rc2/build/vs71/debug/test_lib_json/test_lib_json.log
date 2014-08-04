@@ -1,0 +1,25 @@
+﻿Сборка начата 09.04.2014 16:28:59.
+     1>Проект "C:\Бэкап_Пред_Комп_01.02.14\3 course.2sem\ИТ.Доп_материалы\jsoncpp-src-0.6.0-rc2 (1)\jsoncpp-src-0.6.0-rc2\makefiles\vs71\test_lib_json.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"../../build/vs71/debug/test_lib_json\\" /Fd"../../build/vs71/debug/test_lib_json\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\test_lib_json\jsontest.cpp ..\..\src\test_lib_json\main.cpp
+         main.cpp
+         jsontest.cpp
+         Создание кода...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../build/vs71/debug/test_lib_json\test_lib_json.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"../../build/vs71/debug/test_lib_json\test_lib_json.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"../../build/vs71/debug/test_lib_json\test_lib_json.lib" /MACHINE:X86 /SAFESEH ../../build/vs71/debug/test_lib_json\jsontest.obj
+         ../../build/vs71/debug/test_lib_json\main.obj
+         "C:\Бэкап_Пред_Комп_01.02.14\3 course.2sem\ИТ.Доп_материалы\jsoncpp-src-0.6.0-rc2 (1)\jsoncpp-src-0.6.0-rc2\build\vs71\debug\lib_json\json_vc71_libmtd.lib"
+     1>jsontest.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/SAFESEH"
+         test_lib_json.vcxproj -> C:\Бэкап_Пред_Комп_01.02.14\3 course.2sem\ИТ.Доп_материалы\jsoncpp-src-0.6.0-rc2 (1)\jsoncpp-src-0.6.0-rc2\makefiles\vs71\../../build/vs71/debug/test_lib_json\test_lib_json.exe
+       PostBuildEvent:
+         C:\Бэкап_Пред_Комп_01.02.14\3 course.2sem\ИТ.Доп_материалы\jsoncpp-src-0.6.0-rc2 (1)\jsoncpp-src-0.6.0-rc2\makefiles\vs71\../../build/vs71/debug/test_lib_json\test_lib_json.exe
+         :VCEnd
+         "C:\Бэкап_Пред_Комп_01.02.14\3" не является внутренней или внешней
+         командой, исполняемой программой или пакетным файлом.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(132,5): error MSB3073: выход из команды "C:\Бэкап_Пред_Комп_01.02.14\3 course.2sem\ИТ.Доп_материалы\jsoncpp-src-0.6.0-rc2 (1)\jsoncpp-src-0.6.0-rc2\makefiles\vs71\../../build/vs71/debug/test_lib_json\test_lib_json.exe
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(132,5): error MSB3073: :VCEnd" с кодом 9009.
+     1>Сборка проекта "C:\Бэкап_Пред_Комп_01.02.14\3 course.2sem\ИТ.Доп_материалы\jsoncpp-src-0.6.0-rc2 (1)\jsoncpp-src-0.6.0-rc2\makefiles\vs71\test_lib_json.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+Затраченное время: 00:00:24.57

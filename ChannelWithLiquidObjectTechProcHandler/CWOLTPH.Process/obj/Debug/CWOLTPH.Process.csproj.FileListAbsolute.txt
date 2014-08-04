@@ -1,0 +1,10 @@
+C:\Users\Даниил\documents\visual studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWOLTPH.Process\bin\Debug\CWOLTPH.Process.dll
+C:\Users\Даниил\documents\visual studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWOLTPH.Process\bin\Debug\CWOLTPH.Process.pdb
+C:\Users\Даниил\documents\visual studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWOLTPH.Process\obj\Debug\CWOLTPH.Process.dll
+C:\Users\Даниил\documents\visual studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWOLTPH.Process\obj\Debug\CWOLTPH.Process.pdb
+C:\Users\Даниил\documents\visual studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWOLTPH.Process\obj\Debug\CWOLTPH.Process.csprojResolveAssemblyReference.cache
+C:\Users\Даниил\documents\visual studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWOLTPH.Process\bin\Debug\CWLOTPH.DataObject.dll
+C:\Users\Даниил\documents\visual studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWOLTPH.Process\bin\Debug\CWLOTPH.DataObject.pdb
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWOLTPH.Process\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWOLTPH.Process\bin\Debug\CWOLTPH.Process.dll.CodeAnalysisLog.xml
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWOLTPH.Process\bin\Debug\CWOLTPH.Process.dll.lastcodeanalysissucceeded

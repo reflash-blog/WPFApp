@@ -1,0 +1,212 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="CWLOTPH.Visuality.UserWindow"
+        xmlns:winformchart="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
+        xmlns:charting="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"    
+        Title="User_Window" Height="562.766" Width="917.425" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" Closing="Window_Closing" ResizeMode="CanMinimize">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/userWindow.png"/>
+    </Window.Background>
+    <Window.Icon>
+        <BitmapImage UriSource="Resources/icon.png"/>
+    </Window.Icon>
+    <Grid Margin="0,50,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="784*"/>
+            <ColumnDefinition Width="16*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="177"/>
+            <RowDefinition Height="225"/>
+        </Grid.RowDefinitions>
+        <Menu x:Name="menuToolStrip" Grid.Column="1" Margin="0,6,0,51" HorizontalAlignment="Right" Width="882">
+            <MenuItem x:Name="fileMenuItem" Header="Файл"  Height="25">
+                <MenuItem x:Name="createSettingSetToolstripItem" Header="Создать набор настроек" Margin="0,0,-1,0" Height="25" Click="createSettingSetToolstripItem_Click"/>
+                <MenuItem x:Name="saveSettingSetToolstripItem" Header="Сохранить набор настроек" Margin="0,0,-2,0" Click="saveSettingSetToolstripItem_Click"/>
+                <MenuItem x:Name="saveAsSettingSetToolstripItem" Header="Сохранить набор настроек как..." HorizontalAlignment="Left" Width="270" Margin="0,0,-39,0" Click="saveAsSettingSetToolstripItem_Click"/>
+                <MenuItem x:Name="openSettingSetToolstripItem" Header="Открыть набор настроек" HorizontalAlignment="Left" Width="250" Margin="0,0,-19,0" Click="openSettingSetToolstripItem_Click"/>
+                <Separator HorizontalAlignment="Left" Height="3" Width="210"/>
+                <MenuItem x:Name="quitToolstripItem" Header="Выход" HorizontalAlignment="Left" Width="210"/>
+            </MenuItem>
+            <MenuItem x:Name="startMenuItem" Header="Запуск">
+                <MenuItem x:Name="startExperimentToolstripItem" Header="Запуск эксперимента" HorizontalAlignment="Left" Width="210" Click="startExperimentToolstripItem_Click"/>
+                <MenuItem x:Name="pauseExperimentToolstripItem" Header="Приостановка эксперимента" HorizontalAlignment="Left" Width="244" Click="pauseExperimentToolstripItem_Click" IsEnabled="False"/>
+                <MenuItem x:Name="stopExperimentToolstripItem" Header="Остановка эксперимента" HorizontalAlignment="Left" Width="223" Click="stopExperimentToolstripItem_Click" IsEnabled="False"/>
+            </MenuItem>
+            <MenuItem x:Name="helpMenuItem" Header="Помощь">
+                <MenuItem x:Name="helpToolstripItem" Header="Справка" HorizontalAlignment="Left" Width="159" Click="helpToolstripItem_Click"/>
+                <MenuItem x:Name="aboutProgramToolstripItem" Header="О программе" HorizontalAlignment="Left" Width="159" Click="aboutProgramToolstripItem_Click"/>
+            </MenuItem>
+        </Menu>
+        <ToolBar x:Name="toolBar" VerticalAlignment="Bottom" Height="28" Grid.Column="1" Margin="0,0,0,18" HorizontalAlignment="Right" Width="882">
+            <Button x:Name="newButton" Click="createSettingSetToolstripItem_Click">
+                <Image Source="Resources/new.jpg" MaxHeight="32" Height="17" Width="25"/>
+            </Button>
+            <Button x:Name="openButton" Click="openSettingSetToolstripItem_Click">
+                <Image Source="Resources/open.jpg" MaxHeight="32" Height="17" Width="25"/>
+            </Button>
+            <Button x:Name="saveButton" Click="saveSettingSetToolstripItem_Click">
+                <Image Source="Resources/save.jpg" MaxHeight="32" Height="17" Width="25"/>
+            </Button>
+            <Button x:Name="saveAsButton" Click="saveAsSettingSetToolstripItem_Click">
+                <Image Source="Resources/saveas.jpg" MaxHeight="32" Height="17" Width="25"/>
+            </Button>
+        </ToolBar>
+        <Grid Grid.Column="1" HorizontalAlignment="Left" Height="37" Margin="0,-36,0,0" VerticalAlignment="Top" Width="781" Background="Transparent" MouseLeftButtonDown="titleBar_MouseLeftButtonDown">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="409*"/>
+                <ColumnDefinition Width="372*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="26*"/>
+                <RowDefinition Height="6*"/>
+            </Grid.RowDefinitions>
+
+            <Label x:Name="titleLable" Content="ChannelWithLiquidTechProcessHandler - User Mode" HorizontalAlignment="Left" Margin="204,0,0,0" Width="528" FontSize="18" FontFamily="Stencil" Grid.Row="1" Grid.ColumnSpan="2"/>
+        </Grid>
+
+        <Grid Grid.Column="1" Height="37" Margin="781,-41,0,0" VerticalAlignment="Top">
+            <Button x:Name="exitButton" Content="" HorizontalAlignment="Left" Margin="53,0,0,-3" VerticalAlignment="Bottom" Width="38" RenderTransformOrigin="-0.543,0.15" Height="35" Click="exitButton_Click">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background">
+                            <Setter.Value>
+                                <ImageBrush ImageSource="Resources/exitNotClicked.png"/>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <ImageBrush ImageSource="Resources/exitClicked.png"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button x:Name="turnButton" Margin="15,5,0,-3" RenderTransformOrigin="-0.543,0.15" Click="turnButton_Click" HorizontalAlignment="Left" Width="38" Height="35" VerticalAlignment="Top">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background">
+                            <Setter.Value>
+                                <ImageBrush ImageSource="Resources/turnNotClicked.png"/>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <ImageBrush ImageSource="Resources/turnClicked.png"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </Grid>
+        <Grid Grid.Column="1" Height="421" Margin="0,72,0,0" VerticalAlignment="Top" Grid.RowSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="12*"/>
+                <ColumnDefinition Width="133*"/>
+                <ColumnDefinition Width="296*"/>
+            </Grid.ColumnDefinitions>
+            <charting:Chart x:Name="FirstChart" Grid.Column="2" Margin="241,0,0,206" RenderTransformOrigin="0.451,-0.415">
+                <charting:Chart.Axes>
+                    <charting:LinearAxis Orientation="Y" Title="Температура, градусы Цельсия" />
+                    <charting:LinearAxis Orientation="X" Title="Координаты по длине, м" ShowGridLines="True" />
+                </charting:Chart.Axes>
+                <charting:LineSeries x:Name="UpperChart"
+            		DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" Title="T(x)" HorizontalAlignment="Right" Width="175" Height="133" VerticalAlignment="Top"/>
+            </charting:Chart>
+            <charting:Chart x:Name="SecondChart" Grid.Column="2" Margin="241,206,0,0" RenderTransformOrigin="0.451,-0.415">
+                <charting:Chart.Axes>
+                    <charting:LinearAxis Orientation="Y" Title="Вязкость, Па*с" />
+                    <charting:LinearAxis Orientation="X" Title="Координаты по длине, м" ShowGridLines="True" />
+                </charting:Chart.Axes>
+                <charting:LineSeries x:Name="LowerChart"
+            		DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" Title="&#x03BC;(x)" HorizontalAlignment="Right" Width="175" Height="133" VerticalAlignment="Top"/>
+            </charting:Chart>
+            <Label x:Name="geometryParamsLabel" Content="Геометрические параметры канала" Grid.Column="1" HorizontalAlignment="Left" Margin="50,2,0,0" VerticalAlignment="Top" Width="216"/>
+            <Label x:Name="lengthLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="80" Height="23" Content="L, м"/>
+            <Label x:Name="widthLabel" Content="W, м" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Height="23" Grid.Column="1" Margin="10,56,0,0"/>
+            <Label x:Name="heightLabel" Content="H, м" Grid.Column="1" HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" Width="80" Height="23"/>
+            <Label x:Name="mTypeLabel" Content="Тип материала" Grid.Column="1" HorizontalAlignment="Left" Margin="10,122,0,0" VerticalAlignment="Top" Width="94" Height="23"/>
+            <TextBox x:Name="lengthTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="105,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="widthTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="105,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="heightTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="105,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <ComboBox x:Name="mTypeComboBox" Grid.Column="1" ToolTip="" HorizontalAlignment="Left" Margin="119,123,0,0" VerticalAlignment="Top" Width="120" Loaded="ComboBox_Loaded" SelectionChanged="mTypeComboBox_SelectionChanged" />
+            <Label x:Name="velocityLabel" Content="Vu, м&#247;c" Grid.Column="1" HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" Width="80" Height="23"/>
+            <TextBox x:Name="velocityTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="105,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="temperatureLabel" Content="Tu, &#x00B0;C" Grid.Column="1" HorizontalAlignment="Left" Margin="10,206,0,0" VerticalAlignment="Top" Width="80" Height="23"/>
+            <TextBox x:Name="temperatureTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="105,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="modeParamsLabel" Content="Режимные параметры процесса" Grid.Column="1" HorizontalAlignment="Left" Margin="50,150,0,0" VerticalAlignment="Top" Width="206"/>
+            <Label x:Name="productViscosityLabel" Content="Вязкость Па&#x00B7;с" Grid.Column="2" HorizontalAlignment="Left" Margin="0,84,0,0" VerticalAlignment="Top" Width="127" Height="23"/>
+            <TextBox x:Name="productViscosityTextBox" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="132,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" IsEnabled="False"/>
+            <Label x:Name="productConsumptionLabel" Content="Выход продукта кг&#247;c" Grid.Column="2" HorizontalAlignment="Left" Margin="0,28,0,0" VerticalAlignment="Top" Width="127" Height="28" RenderTransformOrigin="0.195,0.536"/>
+            <TextBox x:Name="productConsumptionTextBox" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="132,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" IsEnabled="False"/>
+            <Label x:Name="productTemperatureLabel" Content="Температура &#x00B0;C" Grid.Column="2" HorizontalAlignment="Left" Margin="0,56,0,0" VerticalAlignment="Top" Width="132" Height="28"/>
+            <TextBox x:Name="productTemperatureTextBox" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="132,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" IsEnabled="False"/>
+            <Label x:Name="outputDataLabel" Content="Выходные данные" Grid.Column="2" HorizontalAlignment="Left" Margin="61,0,0,0" VerticalAlignment="Top" Width="161"/>
+            <DataGrid x:Name="outputDataGrid" Grid.Column="2" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" Height="243" Width="226"/>
+            <Label x:Name="stepLabel" Content="Шаг" Grid.Column="2" HorizontalAlignment="Left" Margin="0,112,0,0" VerticalAlignment="Top" Width="80" Height="23"/>
+            <TextBox x:Name="stepTextBox" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="132,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
+            <Label x:Name="codePerfomingTimeLabel" Content="Время выполнения: " Grid.Column="2" HorizontalAlignment="Left" Margin="375,2,0,0" VerticalAlignment="Top" Width="207"/>
+        </Grid>
+        <Button x:Name="updateButton" Content="" HorizontalAlignment="Left" Width="139" RenderTransformOrigin="0.577,8" Margin="117,10,0,168" Click="updateButton_Click" Opacity="0.9" BorderBrush="{x:Null}" ClickMode="Press" BorderThickness="0" Foreground="{x:Null}" Grid.Column="1" Grid.Row="3" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <ImageBrush ImageSource="Resources/updateNotClicked.png"/>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush ImageSource="Resources/updateClicked.png"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+    </Grid>
+</Window>

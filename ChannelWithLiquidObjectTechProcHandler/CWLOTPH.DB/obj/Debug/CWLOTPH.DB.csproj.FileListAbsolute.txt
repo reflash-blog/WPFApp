@@ -1,0 +1,10 @@
+C:\Users\Даниил\documents\visual studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.DB\bin\Debug\CWLOTPH.DB.dll
+C:\Users\Даниил\documents\visual studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.DB\bin\Debug\CWLOTPH.DB.pdb
+C:\Users\Даниил\documents\visual studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.DB\obj\Debug\CWLOTPH.DB.dll
+C:\Users\Даниил\documents\visual studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.DB\obj\Debug\CWLOTPH.DB.pdb
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.DB\bin\Debug\CWLOTPH.DB.dll.config
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.DB\bin\Debug\EntityFramework.dll
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.DB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.DB\bin\Debug\EntityFramework.xml
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.DB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Даниил\Documents\Visual Studio 2013\Projects\ChannelWithLiquidObjectTechProcHandler\CWLOTPH.DB\obj\Debug\CWLOTPH.DB.csprojResolveAssemblyReference.cache

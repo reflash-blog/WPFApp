@@ -1,0 +1,11 @@
+{
+"EmpiricalVector":
+{"Mu":1550.0,"n":0.4,"Tgamma":180.0,"alphaU":2000.0,"b":0.015},
+"GeometryVector":
+{"L":6.6,"W":0.17,"H":0.03},
+"ModeVector":
+{"Vu":1.0,"Tu":200.0},
+"MaterialProperties":
+{"Ro":890.0,"T0":175.0,"C":2302.0},
+"DiscretizationStep":0.5
+}

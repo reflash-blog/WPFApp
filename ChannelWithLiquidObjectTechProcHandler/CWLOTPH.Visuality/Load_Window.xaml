@@ -1,0 +1,21 @@
+﻿<Window x:Class="CWLOTPH.Visuality.Load_Window"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LogonForm" Height="372.132" Width="706.852" WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/loadWindow.png"/>
+    </Window.Background>
+    <Grid RenderTransformOrigin="0.605,0.503">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="305*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="51*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="68*"/>
+            <ColumnDefinition Width="441*"/>
+            <ColumnDefinition Width="198*"/>
+        </Grid.ColumnDefinitions>
+        <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="441" Grid.Column="1" Grid.Row="1"/>
+    </Grid>
+</Window>
